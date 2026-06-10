@@ -9,20 +9,26 @@
             margin: 0;
             padding: 0;
             min-height: 100vh;
-            /* Main Background Color */
             background-color: #535353; 
-            
-            );
         }
 
-        /* NEW: The 660x460 background box container */
+        /* The main background box container */
         .content-box {
             width: 900px;
-            height: 460px;
-            background-color: #eeeeee; /* Change this hex code to change the box color */
-            margin: 40px auto 0 auto;  /* Centers the box and adds space from top */
-            padding-bottom: 1000px;     /* Adds 200px of space underneath the image */
-            box-sizing: content-box;   /* Keeps the box dimensions accurate */
+            height: auto;              /* Changed to auto so it grows with content */
+            background-color: #eeeeee; 
+            margin: 40px auto;         /* Centers the box */
+            padding: 23px;             /* Adds clean space inside the box */
+            box-sizing: border-box;    
+        }
+
+        /* The inner box holding the image */
+        .image-box {
+            width: 650px;
+            height: auto;
+            margin: 20px auto;         /* Centers the image box inside the content box */
+            background-color: #c6c6c6; 
+            padding: 10px;
         }
 
         .center-image {
@@ -38,11 +44,13 @@
 <body>
 
 <div class="content-box">
-        
-<h1 style="font-size: 23px; text-align: center; margin-top: 0; padding-top: 23px;">Sburb Theta</h1>     
-<br>
-<img src="My-Project2-13-2026-11-05-23.gif" alt="Konuss" width="650" height="450" class="center-image">
-</div>    
-</body>
+    <h1 style="font-size: 23px; text-align: center; margin-top: 0;">Sburb Theta</h1>     
     
+    <!-- Image Box is now nested inside Content Box -->
+    <div class="image-box">
+        <img src="My-Project2-13-2026-11-05-23.gif" alt="Konuss" width="650" height="450" class="center-image">
+    </div>
+</div>    
+
+</body>
 </html>
