@@ -1,122 +1,121 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>sick ass website</title>
-<link rel="icon" href="middleicon.png">
-<style>
-@font-face {
-    font-family: 'CourierStd';
-    src: url('Courier-Std-Bold.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-body {
-    font-family: 'CourierStd', sans-serif;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    background-color: #535353;
-}
-/* White navigation container with a solid black bottom border */
-.mspa-nav-container {
-    background-color: #ffffff;
-    border-bottom: 3px solid #000000;
-    width: 900px;
-    margin: 0 auto;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-/* Center wrapper for the navigation links */
-.mspa-nav-links {
-    text-align: center;
-    flex-grow: 1;
-}
-.mspa-nav-links a {
-    color: #000000;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    margin: 0 30px;
-    display: inline-block;
-}
-.mspa-nav-links a:hover {
-    color: #00ff00;
-    text-decoration: underline;
-}
-.next-page-button {
-    margin-left: 40px;
-    display: block;
-}
-/* The main background box container */
-.content-box {
-    width: 900px;
-    height: auto;
-    background-color: #c6c6c6;
-    margin: 20px auto 40px auto;
-    padding: 23px;
-    box-sizing: border-box;
-}
-/* The inner box holding the image */
-.image-box {
-    width: 650px;
-    height: auto;
-    margin: 20px auto;
-    background-color: #eeeeee;
-    padding-bottom: 0px; /* REMOVED padding below the go back button */
-    position: relative; 
-}
-.center-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    height: auto;
-    padding-bottom: 10px;
-}
-/* Go Back link layout styling */
-.go-back-button {
-    display: inline-block;
-    padding-top: 45px; 
-    padding-bottom: 20px; /* Added padding on the button itself to maintain clean look inside the frame */
-    margin-left: 40px;   
-    font-size: 14px;
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
-}
-.go-back-button:hover {
-    text-decoration: underline;
-    color: #00ff00;
-}
-</style>
+    <title>sick ass website</title>
+    <link rel="icon" href="middleicon.png">
+    <style>
+        @font-face {
+            font-family: 'CourierStd';
+            src: url('Courier-Std-Bold.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        body {
+            font-family: 'CourierStd', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-color: #535353;
+        }
+        /* White navigation container with a solid black bottom border */
+        .mspa-nav-container {
+            background-color: #ffffff;
+            border-bottom: 3px solid #000000;
+            width: 900px;
+            margin: 0 auto;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        /* Center wrapper for the navigation links */
+        .mspa-nav-links {
+            text-align: center;
+            flex-grow: 1;
+        }
+        .mspa-nav-links a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0 30px;
+            display: inline-block;
+        }
+        .mspa-nav-links a:hover {
+            color: #00ff00;
+            text-decoration: underline;
+        }
+        .next-page-button {
+            margin-left: 40px;
+            display: block;
+        }
+        /* The main background box container */
+        .content-box {
+            width: 900px;
+            height: auto;
+            background-color: #c6c6c6;
+            margin: 20px auto 40px auto;
+            padding: 23px;
+            box-sizing: border-box;
+        }
+        /* The inner box holding the image */
+        .image-box {
+            width: 650px;
+            height: auto;
+            margin: 20px auto;
+            background-color: #eeeeee;
+            padding-bottom: 20px; /* UPDATED: Changed from 0px to 20px to add space beneath the next page button */
+            position: relative;
+        }
+        .center-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            height: auto;
+            padding-bottom: 10px;
+        }
+        /* Go Back link layout styling */
+        .go-back-button {
+            display: inline-block;
+            padding-top: 45px;
+            padding-bottom: 20px; /* Added padding on the button itself to maintain clean look inside the frame */
+            margin-left: 40px;
+            font-size: 14px;
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .go-back-button:hover {
+            text-decoration: underline;
+            color: #00ff00;
+        }
+    </style>
 </head>
 <body>
 
-<!-- White Navigation Box with Black Bottom Line -->
-<div class="mspa-nav-container">
-    <img src="left-nav-art.png" alt="" class="nav-side-img">
-    
-    <div class="mspa-nav-links">
-        <a href="/index.html">HOME</a>
-        <a href="/about.html">ABOUT</a>
-        <a href="/log.html">LOGS</a>
+    <!-- White Navigation Box with Black Bottom Line -->
+    <div class="mspa-nav-container">
+        <img src="left-nav-art.png" alt="" class="nav-side-img">
+        <div class="mspa-nav-links">
+            <a href="/index.html">HOME</a>
+            <a href="/about.html">ABOUT</a>
+            <a href="/log.html">LOGS</a>
+        </div>
+        <img src="right-nav-art.png" alt="" class="nav-side-img">
     </div>
-    
-    <img src="right-nav-art.png" alt="" class="nav-side-img">
-</div>
 
-<div class="content-box">
-    <h1 style="font-size: 23px; text-align: center; margin-top: 0;">Sburb Theta</h1>
-    <div class="image-box">
-        <img src="Theta-page-1.png" alt="Konuss" width="650" height="450" class="center-image">
-        <p style="font-size: 16px; text-align: center;">a yung thingie stands in there room it not wriglin dae</p>
-        <br>
-        <a style="font-size: 22px;" class="next-page-button" href="/Bowlsheet/Pages/01.html">> Enter Name: jingleberry fartbottom</a>
+    <div class="content-box">
+        <h1 style="font-size: 23px; text-align: center; margin-top: 0;">Sburb Theta</h1>
+        <div class="image-box">
+            <img src="Theta-page-1.png" alt="Konuss" width="650" height="450" class="center-image">
+            <p style="font-size: 16px; text-align: center;">a yung thingie stands in there room it not wriglin dae</p>
+            <br>
+            <a style="font-size: 22px;" class="next-page-button" href="/Bowlsheet/Pages/01.html">> Enter Name: jingleberry fartbottom</a>
+        </div>
     </div>
-</div>
+
 </body>
 </html>
