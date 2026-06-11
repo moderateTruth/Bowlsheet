@@ -18,26 +18,39 @@ body {
     min-height: 100vh;
     background-color: #535353;
 }
-/* Extended background box flushing directly against the top of the browser window */
+/* Flex container to hold the navigation links and flanking images */
 .mspa-nav-container {
     background-color: #000000;
     width: 900px;
-    margin: 0 auto; /* Removed top margin so it extends to the absolute top */
-    padding: 15px 0;
+    margin: 0 auto;
+    padding: 10px 20px;
     box-sizing: border-box;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.mspa-nav-container a {
-    color: #00ff00; /* New nice green color for the text */
+/* Center wrapper for the navigation links */
+.mspa-nav-links {
+    text-align: center;
+    flex-grow: 1;
+}
+.mspa-nav-links a {
+    color: #00ff00;
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
     margin: 0 30px;
     display: inline-block;
 }
-.mspa-nav-container a:hover {
-    color: #ffffff; /* Swapped hover color to white for high contrast visibility */
+.mspa-nav-links a:hover {
+    color: #ffffff;
     text-decoration: underline;
+}
+/* Side image styles */
+.nav-side-img {
+    width: 40px;  /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    object-fit: contain;
 }
 .next-page-button {
     margin-left: 40px;
@@ -71,11 +84,17 @@ body {
 </head>
 <body>
 
-<!-- Navigation Box Extending To The Top -->
+<!-- Navigation Box with Spaces for Left and Right Images -->
 <div class="mspa-nav-container">
-    <a href="/index.html">HOME</a>
-    <a href="/about.html">ABOUT</a>
-    <a href="/log.html">LOGS</a>
+    <img src="MSPA_Logo.gif" alt="" class="nav-side-img">
+    
+    <div class="mspa-nav-links">
+        <a href="/index.html">HOME</a>
+        <a href="/about.html">ABOUT</a>
+        <a href="/log.html">LOGS</a>
+    </div>
+    
+    <img src="MSPA_Logo.gif" alt="" class="nav-side-img">
 </div>
 
 <div class="content-box">
@@ -89,4 +108,3 @@ body {
 </div>
 </body>
 </html>
-
