@@ -15,7 +15,34 @@
         body {
             font-family: 'CourierStd', sans-serif;
         }
-        
+        .mspa-nav-container {
+    background-color: #ffffff;
+    border-bottom: 3px solid #000000;
+    width: 900px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+/* Center wrapper for the navigation links */
+    .mspa-nav-links {
+        text-align: center;
+        flex-grow: 1;
+    }
+    .mspa-nav-links a {
+        color: #000000; /* Changed navigation link text color to black */
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0 30px;
+        display: inline-block;
+    }
+    .mspa-nav-links a:hover {
+        color: #00ff00; /* Swapped hover color back to green for high contrast on white background */
+        text-decoration: underline;
+    }
         body {
             margin: 0;
             padding: 0;
