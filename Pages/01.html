@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>sick ass website</title>
-    <link rel="icon" href="/Bowlsheet/middleicon.png">
-    <style>
-        @font-face {
-            font-family: 'CourierStd';
-            src: url('/Bowlsheet/Courier-Std-Bold.otf') format('opentype');
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap; 
-        }
-        body {
-            font-family: 'CourierStd', sans-serif;
-        }
-        .mspa-nav-container {
+<title>sick ass website</title>
+<link rel="icon" href="/Bowlsheet/middleicon.png">
+<style>
+@font-face {
+    font-family: 'CourierStd';
+    src: url('/Bowlsheet/Courier-Std-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    font-family: 'CourierStd', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #535353;
+}
+/* White navigation container with a solid black bottom border */
+.mspa-nav-container {
     background-color: #ffffff;
     border-bottom: 3px solid #000000;
     width: 900px;
@@ -25,63 +29,71 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    }
+}
 /* Center wrapper for the navigation links */
-    .mspa-nav-links {
-        text-align: center;
-        flex-grow: 1;
-    }
-    .mspa-nav-links a {
-        color: #000000; /* Changed navigation link text color to black */
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: bold;
-        margin: 0 30px;
-        display: inline-block;
-    }
-    .mspa-nav-links a:hover {
-        color: #00ff00; /* Swapped hover color back to green for high contrast on white background */
-        text-decoration: underline;
-    }
-        body {
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            background-color: #535353; 
-        }
-        .next-page-button { 
-            margin-left: 40px;
-        }
-        /* The main background box container */
-        .content-box {
-            width: 900px;
-            height: auto;              /* Changed to auto so it grows with content */
-            background-color: #c6c6c6; 
-            margin: 40px auto;         /* Centers the box */
-            padding: 23px;             /* Adds clean space inside the box */
-            box-sizing: border-box;    
-        }
-
-        /* The inner box holding the image */
-        .image-box {
-            width: 650px;
-            height: auto;
-            margin: 20px auto;
-            background-color: #eeeeee;
-            padding-bottom: 40px;      /* ADDED: 20px padding only on the bottom */
-        }
-
-        .center-image {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 100%; 
-            height: auto;
-            padding-bottom: 10px
-        }
-    </style>
+.mspa-nav-links {
+    text-align: center;
+    flex-grow: 1;
+}
+.mspa-nav-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 30px;
+    display: inline-block;
+}
+.mspa-nav-links a:hover {
+    color: #00ff00;
+    text-decoration: underline;
+}
+.next-page-button {
+    margin-left: 40px;
+    display: block;
+}
+/* The main background box container */
+.content-box {
+    width: 900px;
+    height: auto;
+    background-color: #c6c6c6;
+    margin: 20px auto 40px auto;
+    padding: 23px;
+    box-sizing: border-box;
+}
+/* The inner box holding the image */
+.image-box {
+    width: 650px;
+    height: auto;
+    margin: 20px auto;
+    background-color: #eeeeee;
+    padding-bottom: 0px; /* REMOVED padding below the go back button */
+    position: relative; 
+}
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+}
+/* Go Back link layout styling */
+.go-back-button {
+    display: inline-block;
+    padding-top: 45px; 
+    padding-bottom: 20px; /* Added padding on the button itself to maintain clean look inside the frame */
+    margin-left: 40px;   
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.go-back-button:hover {
+    text-decoration: underline;
+    color: #00ff00;
+}
+</style>
 </head>
-
 <body>
 <div class="mspa-nav-container">
     <img src="/Bowlsheet/MSPA_Logo.gif" alt="" width="50" height="50" class="nav-side-img">
@@ -103,6 +115,8 @@
         <p style="font-size: 16px; text-align: center;">thats obv not it</p>
         <br>
         <a style= "font-size: 22px;" class="next-page-button" href="/Bowlsheet/Pages/02.html">> Enter Name: konuss marden</a>
+
+        <a href="/Bowlsheet/Index.html" class="go-back-button">Go Back</a>
     </div>
 </div>    
 
