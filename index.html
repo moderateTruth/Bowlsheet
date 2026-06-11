@@ -36,7 +36,7 @@ body {
     flex-grow: 1;
 }
 .mspa-nav-links a {
-    color: #000000; /* Changed navigation link text color to black */
+    color: #000000;
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
@@ -44,11 +44,12 @@ body {
     display: inline-block;
 }
 .mspa-nav-links a:hover {
-    color: #00ff00; /* Swapped hover color back to green for high contrast on white background */
+    color: #00ff00;
     text-decoration: underline;
 }
 .next-page-button {
     margin-left: 40px;
+    display: block;
 }
 /* The main background box container */
 .content-box {
@@ -65,7 +66,8 @@ body {
     height: auto;
     margin: 20px auto;
     background-color: #eeeeee;
-    padding-bottom: 40px;
+    padding-bottom: 0px; /* REMOVED padding below the go back button */
+    position: relative; 
 }
 .center-image {
     display: block;
@@ -75,21 +77,36 @@ body {
     height: auto;
     padding-bottom: 10px;
 }
+/* Go Back link layout styling */
+.go-back-button {
+    display: inline-block;
+    padding-top: 45px; 
+    padding-bottom: 20px; /* Added padding on the button itself to maintain clean look inside the frame */
+    margin-left: 40px;   
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.go-back-button:hover {
+    text-decoration: underline;
+    color: #00ff00;
+}
 </style>
 </head>
 <body>
 
 <!-- White Navigation Box with Black Bottom Line -->
 <div class="mspa-nav-container">
-    <img src="MSPA_Logo.gif" alt="" width="50" height="50" class="nav-side-img">
+    <img src="left-nav-art.png" alt="" class="nav-side-img">
     
     <div class="mspa-nav-links">
-        <a href="/Bowlsheet/index.html">HOME</a>
-        <a href="/Bowlsheet/about.html">ABOUT</a>
-        <a href="/Bowlsheet/log.html">LOGS</a>
+        <a href="/index.html">HOME</a>
+        <a href="/about.html">ABOUT</a>
+        <a href="/log.html">LOGS</a>
     </div>
     
-    <img src="MSPA_Logo.gif" alt="" width="50" height="50" class="nav-side-img">
+    <img src="right-nav-art.png" alt="" class="nav-side-img">
 </div>
 
 <div class="content-box">
